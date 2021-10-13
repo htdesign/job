@@ -1,0 +1,16 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16"
+  }
+}

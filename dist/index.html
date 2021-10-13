@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen flex">
+    <div class="w-auto h-full bg-black text-white">
+        <!-- PROFILE -->
+        <div class="w-full border-b border-white border-opacity-30 p-6 flex">
+            <div class="w-12 h-12 rounded-full mr-4 overflow-hidden">
+                <img src="./img/profile.jpg" alt="Profile">
+            </div>
+            <div class="flex-grow flex flex-col justify-center">
+                <h2 class="font-bold">John Smith</h2>
+                <p class="text-white text-opacity-50 text-xs">Frontend Developer</p>
+            </div>
+        </div>
+        <!-- END PROFILE -->
+        
+        <!-- MENU -->
+        <div class="w-full p-6 flex">
+            <ul class="w-full">
+                <li>
+                    <a href="#" class="flex items-center group px-4 py-3 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-50 group-hover:opacity-100 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span class="ml-4 font-bold text-sm">Timesheet</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center group px-4 py-3 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-50 group-hover:opacity-100 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span class="ml-4 font-bold text-sm">Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center group px-4 py-3 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-50 group-hover:opacity-100 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                        <span class="ml-4 font-bold text-sm">Task Board</span>
+                    </a>
+                </li>
+                <li class="mt-12">
+                    <a href="#" class="flex items-center group px-4 py-3 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-50 group-hover:opacity-100 transition duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span class="ml-4 font-bold text-sm">Preferences</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- END MENU -->
+
+        <!-- CALENDAR -->
+
+        <div class="flex items-center justify-center py-6 px-4">
+            <div class="max-w-sm w-full md:p-8 p-5">
+                <div class="flex items-center justify-between leading-8">
+                    <a tabindex="0" role="link"
+                        class="cursor-pointer focus:text-gray-400 hover:text-gray-400 text-base font-medium">October
+                        2021</a>
+                    <div class="flex items-center ">
+                        <button class="dark:text-gray-100 focus:text-gray-400 hover:text-gray-400" aria-label="calender backward" >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="15 6 9 12 15 18" />
+                            </svg>
+                        </button>
+                        <button aria-label="calender forward" class="ml-3 dark:text-gray-100 focus:text-gray-400 hover:text-gray-400" >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler  icon-tabler-chevron-right"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="9 6 15 12 9 18" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between pt-8 overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Mo</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Tu</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">We</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Th</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Fr</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Sa</p>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="w-full flex justify-center">
+                                        <p class="text-xs uppercase text-center text-opacity-30 text-white">Su</p>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                </td>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center"></div>
+                                </td>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">1</p>
+                                    </div>
+                                </td>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">2</p>
+                                    </div>
+                                </td>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">3</p>
+                                    </div>
+                                </td>
+                                <td class="pt-2">
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">4</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">5</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">6</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">7</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-full h-full">
+                                        <div class="flex items-center justify-center w-full rounded-full cursor-pointer">
+                                            <a tabindex="0" role="link"
+                                                class="focus:outline-none  focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:bg-indigo-500 hover:bg-indigo-500 text-base w-8 h-8 flex items-center justify-center font-medium text-white bg-indigo-700 rounded-full">
+                                                8</a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">9</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">10</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">11</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">12</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">13</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">14</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">15</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">16</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">17</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">18</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">19</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">20</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">21</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">22</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">23</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">24</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base">25</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">26</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">27</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">28</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">29</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="px-2 py-2 cursor-pointer flex w-full justify-center">
+                                        <p class="text-base font-medium">30</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+        <!-- END CALENDAR -->
+    </div>
+</body>
+</html>

@@ -13,7 +13,7 @@
     <!-- SIDEBAR -->
     <div class="w-auto h-full bg-black text-white flex flex-col">
         <!-- PROFILE -->
-        <div class="w-full border-b border-white border-opacity-30 p-6 flex">
+        <div class="w-full p-6 flex bg-white bg-opacity-10">
             <div class="w-12 h-12 rounded-full mr-4 overflow-hidden">
                 <img src="./img/profile.jpg" alt="Profile">
             </div>
@@ -74,14 +74,14 @@
                     <a tabindex="0" role="link" class="cursor-pointer text-white text-opacity-50 font-bold">October
                         2021</a>
                     <div class="flex items-center">
-                        <button class="" aria-label="calender backward">
+                        <button class="p-1 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
-                        <button aria-label="calender forward" class="">
+                        <button class="p-1 rounded-md w-full hover:bg-white hover:bg-opacity-20 transition duration-400">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -310,12 +310,12 @@
         </div>
         <!-- END CALENDAR -->
 
-        <!-- PROFILE -->
-        <div class="w-full border-t border-white border-opacity-30 px-6 flex">
+        <!-- PREFERENCES -->
+        <div class="w-full bg-white bg-opacity-10 px-6 flex">
             <a href="#"
                 class="flex items-center justify-center group px-4 py-3 rounded-md w-full transition duration-400">
                 <svg xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 opacity-50 group-hover:opacity-100 transition duration-500" fill="none"
+                    class="h-5 w-5 opacity-20 group-hover:opacity-100 transition duration-500" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -324,7 +324,7 @@
                 </svg>
             </a>
         </div>
-        <!-- END PROFILE -->
+        <!-- END PREFERENCES -->
     </div>
     <!-- END SIDEBAR -->
 
@@ -346,7 +346,7 @@
             </div>
         </div>
         
-        <div class="w-full box-border rounded-md shadow-lg bg-gray-100 mt-8 p-4 flex space-x-4" x-transition.duration.200ms x-show="open">
+        <div class="w-full box-border rounded-md shadow-xl bg-gray-100 mt-8 p-4 flex space-x-4" x-transition.duration.400ms x-show="open">
             <div class="border px-4 py-3 w-3/12 bg-white flex items-center rounded-md cursor-pointer">
                 <span class="flex-grow text-sm">Select Task</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20" fill="currentColor">
@@ -361,14 +361,14 @@
                 <input type="text" class="w-16 text-center focus:outline-none" placeholder="00:00"> - 
                 <input type="text" class="w-16 text-center focus:outline-none" placeholder="00:00">
             </div>
-            <button class="uppercase px-4 py-3 text-white text-xs font-bold tracking-widest bg-black opacity-20 rounded-md mr-4">Add Task
+            <button @click="open = false" class="uppercase px-4 py-3 text-white text-xs font-bold tracking-widest bg-black opacity-20 rounded-md mr-4">Add Task
             </button>
         </div>
 
         
         <!-- TABLE -->
-        <div>
-            <div class="flex flex-col mt-16 p-4">
+        <div class="mt-16">
+            <div class="flex flex-col p-4">
                 <!-- DATE -->
                 <div class="w-full flex border-b pb-4">
                     <div class="text-gray-600">Tuesday, October 12</div>

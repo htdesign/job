@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="h-screen flex">
+<body class="h-full flex">
     <!-- SIDEBAR -->
-    <div class="w-auto h-full bg-black text-white flex flex-col">
+    <div class="w-auto min-h-full bg-black text-white flex flex-col">
         <!-- PROFILE -->
         <div class="w-full p-6 flex bg-white bg-opacity-10">
             <div class="w-12 h-12 rounded-full mr-4 overflow-hidden">
@@ -333,7 +333,7 @@
     </div>
     <!-- END SIDEBAR -->
 
-    <div class="w-full h-full bg-white px-16 pb-16 pt-32 text-black" x-data="{ open: false }">
+    <div class="w-full h-full bg-white px-16 pb-16 pt-16 text-black border" x-data="{ open: false }">
         <div class="flex items-center">
             <h1 class="text-2xl font-bold">Timesheet</h1>
             <div class="flex justify-end flex-grow">
@@ -348,20 +348,18 @@
                         <li><a @click="open = ! open" class="px-4 py-2 hover:bg-gray-50">New Task</a></li> 
                         <li><a @click="open = ! open" class="px-4 py-2 hover:bg-gray-50">Leave</a></li> 
                     </ul>
-                    
                 </div>
-
             </div>
         </div>
         
         <div class="w-full box-border rounded-md shadow-xl bg-gray-100 mt-8 p-4 flex space-x-4 relative" x-show="open" x-transition.duration.400ms>
-            <select class="select w-full h-full max-w-sm border px-4 py-3 rounded-md bg-white bg-no-repeat bg-small bg-right" style="background-image: url(./img/arrow-down.svg); background-size: 1.5em; background-position-x: 95%">
+            <select class="select w-full h-full max-w-sm border px-4 py-2 rounded-md bg-white bg-no-repeat bg-small bg-right" style="background-image: url(./img/arrow-down.svg); background-size: 1.5em; background-position-x: 95%">
                 <option disabled="disabled" selected="selected">Select Task</option> 
                 <option>Frontend Development</option> 
                 <option>Backend Development</option> 
                 <option>UI Design</option>
             </select>
-            <input type="text" placeholder="Description" class="border px-4 py-3 flex-grow bg-white flex rounded-md">
+            <input type="text" placeholder="Description" class="border px-4 py-2 flex-grow bg-white flex rounded-md">
             <div class="border px-4 py-3 w-min bg-white flex rounded-md items-center space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -369,7 +367,7 @@
                 <input type="text" class="w-16 text-center focus:outline-none" placeholder="00:00"> - 
                 <input type="text" class="w-16 text-center focus:outline-none" placeholder="00:00">
             </div>
-            <button @click="open = false" class="uppercase px-4 py-3 text-xs font-bold tracking-widest block border border-black border-opacity-20 text-black text-opacity-60 rounded-md mr-4">Add Task
+            <button @click="open = false" class="uppercase px-4 py-2 text-xs font-bold tracking-widest block border border-black border-opacity-20 text-black text-opacity-60 rounded-md mr-4">Add Task
             </button>
             <button class="absolute -right-2 -top-2 bg-red-500 p-1 hover:p-2 rounded-full shadow-lg" @click="open = ! open">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -421,13 +419,13 @@
                                 </thead>
                                 <tbody class="bg-white">
                                     <tr class="group hover:bg-gray-50">
-                                        <td class="px-6 py-3 whitespace-nowrap">
+                                        <td class="px-6 py-3 w-4/12 whitespace-nowrap">
                                             <div class="flex items-center group">
                                                 <div class="p-1.5 inline-flex text-xs leading-none font-semibold rounded-full bg-green-500 text-green-800 mr-4"></div>
                                                 <div>
-                                                    <div class="text-sm">
+                                                    <a class="text-sm font-base group-hover:font-bold" href="#">
                                                         Project backend development
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </td>
@@ -461,9 +459,9 @@
                                                 <span
                                                     class="p-1.5 inline-flex text-xs leading-none font-semibold rounded-full bg-red-500 text-green-800 mr-4"></span>
                                                 <div>
-                                                    <div class="text-sm">
+                                                    <a class="text-sm font-base group-hover:font-bold" href="#">
                                                         Another project name
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </td>

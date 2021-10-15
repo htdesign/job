@@ -9,6 +9,7 @@ module.exports = {
     },
   },
   variants: {
+    fontWeight: ['hover','group-hover'],
     extend: {},
   },
   plugins: [
